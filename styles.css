@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fa688d;
+  display: inline-block;
+  font-size: 35px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fa688d;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+mark {
+  background-color: lightgray;
+  font-size: 17px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  background-image: url("./assets/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  color: white;
+}
+
+.header-container {
+  width: 60%;
+  max-width: 1360px;
+  min-width: 770px;
+  position: relative;
+  margin: auto;
+}
+
+.header-name {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 0;
+  top: 135px;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.header-job-title {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.header-job-title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-job-title h3 {
+  margin-top: 14px;
+}
+
+.header-social-media .fa {
+  top: 100px;
+  font-size: 60px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 2px;
+  color: white;
+}
+
+.photo {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 280px;
+  position: absolute;
+  right: 10px;
+  top: 400px;
+  z-index: 5;
+}
+
+/* SUMMARY */
+.summary-section {
+  background-color: #f4f4f4;
+  font-size: 25px;
+  height: 500px;
+  position: relative;
+}
+
+.summary-section p {
+  width: 60%;
+  max-width: 1360px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1.4;
+}
+
+/* PROJECTS */
+.projects-section {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.projects-container {
+  width: 60%;
+  max-width: 1360px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  transition: transform 1s;
+}
+
+.projects-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-card {
+  margin-top: 40px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.project-img {
+  position: relative;
+  background-color: white;
+  height: 240px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.project-card img:hover {
+  opacity: 0.7;
+}
+
+.project-card h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 9px 15px;
+}
+
+.project-card p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 5px;
+  padding: 9px 15px;
+}
+
+.arrow-link {
+  font-weight: bold;
+  color: #fa688d;
+  text-decoration: underline;
+}
+
+.arrow-link:hover {
+  text-decoration: none;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 9px 15px;
+}
+
+.tags-container p {
+  font-family: "Roboto", sans-serif;
+  background-color: lightgray;
+  font-size: 17px;
+  padding: 5px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+/* MORE PROJECTS */
+
+.more-projects-title {
+  color: black;
+  font-size: 35px;
+}
+
+.more-projects-container {
+  width: 60%;
+  max-width: 1360px;
+  text-align: left;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.more-projects-container p {
+  margin-bottom: 0;
+}
+
+.more-projects-card .tags-container {
+  padding: 5px 0;
+}
+.more-projects-card {
+  margin-bottom: 50px;
+}
+
+.more-projects-card a {
+  color: black;
+  font-size: 20px;
+}
+
+/* SKILLS */
+.skill-section {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.skill-lists-container {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  max-width: 1360px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.skill-lists-container h2 {
+  font-size: 30px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f45f87;
+  position: relative;
+  bottom: 0;
+  height: 150px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.footer-social-media .fa {
+  padding: 20px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 35px 2px;
+  color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 1040px) {
+  .photo {
+    width: 210px;
+  }
+
+  .header-name {
+    top: 200px;
+    left: 30px;
+    font-size: 22px;
+  }
+
+  .header-job-title {
+    top: 240px;
+    left: 30px;
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-social-media .fa {
+    top: 130px;
+    font-size: 40px;
+  }
+
+  .header-name {
+    top: 230px;
+    left: 30px;
+    font-size: 17px;
+  }
+
+  .header-job-title {
+    top: 270px;
+    left: 30px;
+    font-size: 25px;
+  }
+
+  .photo {
+    top: 460px;
+    right: 190px;
+    width: 150px;
+    border: 3px solid white;
+  }
+
+  .summary-section {
+    height: 500px;
+    font-size: 20px;
+  }
+
+  .summary-section p {
+    width: 80%;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+  }
+
+  .projects-title {
+    font-size: 20px;
+  }
+
+  .projects-container a {
+    width: 100%;
+  }
+
+  .project-img-text {
+    height: 200px;
+  }
+
+  .project-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-card h2 {
+    font-size: 20px;
+  }
+
+  .project-card h3,
+  .project-card p {
+    font-size: 17px;
+  }
+
+  .tags-container p {
+    font-size: 10px;
+  }
+
+  .more-projects-container {
+    width: 80%;
+  }
+
+  .more-projects-container a {
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  .skills-section {
+    padding-bottom: 30px;
+  }
+
+  .skills-lists-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill-list h2,
+  li {
+    font-size: 18px;
+  }
+
+  .skill-list {
+    width: 40%;
+  }
+}
