@@ -231,7 +231,7 @@ header {
   padding: 5px 0;
 }
 .more-projects-card {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .more-projects-card a {
@@ -377,7 +377,7 @@ footer {
   .tags-container p {
     padding: 3px;
     margin-right: 6px;
-    margin-top: 0;
+    margin-top: 3px;
   }
 
   /* MORE PROJECTS */
