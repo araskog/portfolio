@@ -1,2 +1,3 @@
 # portfolio
-Simple portfolio page made in HTML and CSS. 
+
+My portfolio page, made in HTML and CSS.
