@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  color: #fa688d;
+  color: #a01e8c;
   display: inline-block;
   font-size: 35px;
   padding: 10px;
@@ -182,7 +182,7 @@ header {
 
 .arrow-link {
   font-weight: bold;
-  color: #fa688d;
+  color: #a01e8c;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -269,7 +269,7 @@ ul {
 
 /* FOOTER */
 footer {
-  background-color: #f45f87;
+  background-color: #a01e8c;
   position: relative;
   bottom: 0;
   height: 150px;
