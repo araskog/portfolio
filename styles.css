@@ -100,7 +100,7 @@ header {
 .summary-section {
   background-color: #f4f4f4;
   font-size: 25px;
-  height: 550px;
+  height: 600px;
   position: relative;
 }
 
@@ -294,7 +294,7 @@ footer {
 
 /* MOBILE */
 
-@media only screen and (max-width: 687px) {
+@media only screen and (max-width: 1000px) {
   /* HEADER */
   header {
     height: 450px;
