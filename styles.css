@@ -133,8 +133,21 @@ header {
   line-height: 25px;
 }
 
-.experience-section .tags-container {
+.experience-section-container {
+  width: 60%;
+  max-width: 1360px;
+  text-align: left;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.experience-section-container .tags-container {
   padding-left: 0;
+}
+
+.experience-section-title {
+  color: black;
 }
 
 /* PROJECTS */
@@ -225,38 +238,6 @@ header {
   padding: 5px;
   margin-right: 8px;
   margin-top: 5px;
-}
-
-/* MORE PROJECTS */
-
-.more-projects-title {
-  color: black;
-  font-size: 35px;
-}
-
-.more-projects-container {
-  width: 60%;
-  max-width: 1360px;
-  text-align: left;
-  margin: auto;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-.more-projects-container p {
-  margin-bottom: 0;
-}
-
-.more-projects-card .tags-container {
-  padding: 5px 0;
-}
-.more-projects-card {
-  margin-bottom: 30px;
-}
-
-.more-projects-card a {
-  color: black;
-  font-size: 20px;
 }
 
 /* SKILLS */
@@ -398,25 +379,6 @@ footer {
     padding: 3px;
     margin-right: 6px;
     margin-top: 3px;
-  }
-
-  /* MORE PROJECTS */
-
-  .more-projects-title {
-    font-size: 25px;
-  }
-
-  .more-projects-container {
-    width: 80%;
-    font-size: 17px;
-  }
-
-  .more-projects-card {
-    margin-bottom: 20px;
-  }
-
-  .more-projects-card a {
-    font-size: 17px;
   }
 
   /* SKILLS */
