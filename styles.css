@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *:focus {
@@ -26,194 +27,6 @@ a:hover {
   opacity: 0.7;
 }
 
-mark {
-  background-color: lightgray;
-  font-size: 17px;
-  padding: 5px;
-  font-family: "Roboto", sans-serif;
-}
-
-/* HEADER */
-header {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 550px;
-  width: 100%;
-  color: white;
-}
-
-.header-container {
-  width: 60%;
-  max-width: 1360px;
-  min-width: 770px;
-  position: relative;
-  margin: auto;
-}
-
-.header-name {
-  font-family: "Roboto", sans-serif;
-  position: absolute;
-  left: 0;
-  top: 135px;
-  font-size: 25px;
-  font-weight: lighter;
-}
-
-.header-job-title {
-  position: absolute;
-  left: 0;
-  top: 200px;
-  font-size: 35px;
-  font-weight: 700;
-}
-
-.header-job-title h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header-job-title h3 {
-  margin-top: 14px;
-}
-
-.header-social-media .fa {
-  top: 100px;
-  font-size: 60px;
-  padding-right: 20px;
-  text-align: center;
-  text-decoration: none;
-  margin: 30px 2px;
-  color: white;
-}
-
-.photo {
-  border-radius: 50%;
-  border: 5px solid white;
-  width: 280px;
-  position: absolute;
-  right: 10px;
-  top: 400px;
-  z-index: 5;
-}
-
-/* SUMMARY */
-.summary-section {
-  font-size: 25px;
-  height: 600px;
-  position: relative;
-}
-
-.summary-section p {
-  width: 60%;
-  max-width: 1360px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
-  line-height: 1.4;
-}
-
-/* EXPERIENCE */
-.experience-section {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding-bottom: 80px;
-}
-
-.experience-section p {
-  margin-top: 6px;
-}
-
-.experience-section ul {
-  margin-left: 20px;
-  list-style: circle;
-  font-size: 18px;
-  line-height: 25px;
-}
-
-.experience-section-container {
-  width: 60%;
-  max-width: 1360px;
-  text-align: left;
-  margin: auto;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-.experience-section-container .tags-container {
-  padding-left: 0;
-}
-
-.experience-section-title {
-  color: black;
-}
-
-/* PROJECTS */
-.projects-section {
-  background-color: white;
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-.projects-container {
-  width: 60%;
-  max-width: 1360px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
-  transition: transform 1s;
-}
-
-.projects-container a {
-  text-decoration: none;
-  color: black;
-}
-
-.project-card {
-  margin-top: 40px;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-.project-img {
-  position: relative;
-  background-color: white;
-  height: auto;
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  opacity: 1;
-}
-
-.project-card img:hover {
-  opacity: 0.7;
-}
-
-.project-card h3 {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  text-align: left;
-  margin-bottom: 0;
-  padding: 9px 15px;
-}
-
-.project-card p {
-  font-size: 20px;
-  text-align: left;
-  margin-top: 5px;
-  padding: 9px 15px;
-}
-
 .arrow-link {
   font-weight: bold;
   color: #a01e8c;
@@ -225,13 +38,158 @@ header {
   text-decoration: none;
 }
 
-.tags-container {
+mark {
+  background-color: lightgray;
+  font-size: 17px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+header .container {
+  width: 60%;
+  padding-top: 40px;
+  margin: auto;
+}
+header .container .job-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+header .container h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+header .container h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-top: 14px;
+}
+header .container .fa {
+  font-size: 40px;
+  padding-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 2px;
+  color: white;
+}
+header img {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 125px;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  z-index: 5;
+}
+
+.summary-section {
+  font-size: 20px;
+  margin-top: 40px;
+}
+.summary-section p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.experience-section {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.experience-section h1 {
+  color: black;
+}
+.experience-section .container {
+  width: 60%;
+  max-width: 1360px;
+  text-align: left;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.experience-section .container p {
+  margin-top: 6px;
+}
+.experience-section .container ul {
+  list-style: circle;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.projects-section {
+  background-color: white;
+  text-align: center;
+  align-content: center;
+}
+.projects-section .projects-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: transform 1s;
+}
+.projects-section a {
+  text-decoration: none;
+  color: black;
+}
+.projects-section .project-card + .project-card {
+  margin-left: 20px;
+}
+.projects-section .project-card {
+  margin-top: 40px;
+  width: 300px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.projects-section .project-img {
+  position: relative;
+  background-color: white;
+  height: auto;
+}
+.projects-section .project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 1;
+}
+.projects-section .project-card img:hover {
+  opacity: 0.7;
+}
+.projects-section .project-card h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 9px 15px;
+}
+.projects-section .project-card p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 5px;
+  padding: 9px 15px;
+}
+.projects-section .tags-container {
   display: flex;
   flex-wrap: wrap;
   padding: 9px 15px;
 }
-
-.tags-container p {
+.projects-section .tags-container mark {
   font-family: "Roboto", sans-serif;
   background-color: lightgray;
   font-size: 17px;
@@ -240,36 +198,26 @@ header {
   margin-top: 5px;
 }
 
-/* SKILLS */
 .skill-section {
   background-color: #f4f4f4;
   text-align: center;
   padding-bottom: 80px;
 }
-
-.skill-lists-container {
+.skill-section .skill-list {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
   width: 60%;
   max-width: 1360px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
+  grid-template-columns: 1fr;
 }
-
-.skill-lists-container h2 {
-  font-size: 30px;
-  color: black;
-}
-
-ul {
+.skill-section ul {
   list-style-type: none;
   padding: 0;
   margin-top: 5px;
 }
 
-/* FOOTER */
 footer {
   background-color: #a01e8c;
   position: relative;
@@ -279,8 +227,7 @@ footer {
   color: white;
   font-size: 30px;
 }
-
-.footer-social-media .fa {
+footer .fa {
   padding: 20px;
   font-size: 40px;
   text-align: center;
@@ -289,177 +236,31 @@ footer {
   color: white;
 }
 
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
-
-/* MOBILE */
-
-@media only screen and (max-width: 1000px) {
-  /* HEADER */
-  header {
-    height: 450px;
+@media only screen and (min-width: 768px) {
+  header .container {
+    width: 60%;
   }
-
-  h1 {
+  header .container .job-title {
+    font-size: 35px;
+  }
+  header .container h3 {
     font-size: 25px;
   }
-
-  .header-container {
-    width: 80%;
-    max-width: 580px;
-    min-width: 200px;
+  header .container .fa {
+    font-size: 60px;
   }
-
-  .header-name {
-    top: 70px;
-    font-size: 18px;
+  header img {
+    width: 280px;
+    top: 8rem;
+    margin-left: auto;
   }
-
-  .header-job-title {
-    position: absolute;
-    left: 0;
-    top: 130px;
+  .summary-section {
     font-size: 25px;
-    font-weight: 700;
   }
-
-  .header-social-media .fa {
-    top: 180px;
-    font-size: 30px;
-  }
-
-  .photo {
-    width: 90px;
-    top: 380px;
-  }
-
-  /* SUMMARY */
-  .summary-section {
-    width: 100%;
-    height: 600px;
-    font-size: 20px;
-  }
-
-  .summary-section p {
-    width: 80%;
-    max-width: 450px;
-  }
-
-  mark {
-    padding: 2px;
-  }
-
-  /* PROJECTS */
-  .projects-section {
-    padding-bottom: 20px;
-  }
-
-  .projects-container {
-    width: 65%;
-    max-width: 580px;
-    grid-template-columns: 1fr;
-    grid-column-gap: 20px;
-    align-items: center;
-  }
-
-  .project-card h3 {
-    font-size: 20px;
-  }
-
-  .project-card p {
-    font-size: 17px;
-  }
-  .tags-container {
-    padding: none;
-  }
-
-  .tags-container p {
-    padding: 3px;
-    margin-right: 6px;
-    margin-top: 3px;
-  }
-
-  /* SKILLS */
-  .skill-section {
-    padding-bottom: 40px;
-  }
-
-  .skill-lists-container {
-    font-size: 17px;
-    width: 80%;
-    max-width: 580px;
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-  }
-
-  /* FOOTER */
-  .footer-social-media .fa {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (min-width: 688px) and (max-width: 950px) {
-  /* HEADER */
-  header {
-    height: 450px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  .header-container {
-    width: 80%;
-    max-width: 580px;
-    min-width: 200px;
-  }
-
-  .header-name {
-    top: 70px;
-    font-size: 22px;
-  }
-
-  .header-job-title {
-    left: 0;
-    top: 130px;
-    font-size: 28px;
-    font-weight: 700;
-  }
-
-  .header-job-title h3 {
-    margin-top: 14px;
-  }
-
-  .header-social-media .fa {
-    top: 200px;
-    font-size: 50px;
-  }
-
-  .photo {
-    width: 150px;
-    right: 50px;
-    top: 350px;
-    z-index: 5;
-  }
-
-  /* SUMMARY */
-  .summary-section {
-    width: 100%;
-    height: 450px;
-    font-size: 22px;
-  }
-
-  .summary-section p {
-    width: 80%;
-    max-width: 640px;
-  }
-
-  .projects-container {
-    width: 80%;
-    max-width: 600px;
-    grid-template-columns: 1fr 1fr;
+  .skill-section .skill-list {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

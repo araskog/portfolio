@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden
+}
+
+*:focus {
+  outline: none;
+}
+
+h1 {
+  color: #a01e8c;
+  display: inline-block;
+  font-size: 35px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #362c2f;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.arrow-link {
+  font-weight: bold;
+  color: #a01e8c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.arrow-link:hover {
+  text-decoration: none;
+}
+
+mark {
+  background-color: lightgray;
+  font-size: 17px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: white;
+
+  .container {
+    width: 60%;
+    padding-top: 40px;
+    margin: auto;
+
+    .job-title {
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: 14px;
+    }
+
+    .fa {
+      font-size: 40px;
+      padding-right: 20px;
+      text-align: center;
+      text-decoration: none;
+      margin: 30px 2px;
+      color: white;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 125px;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    z-index: 5;
+  }
+}
+
+.summary-section {
+  font-size: 20px;
+  margin-top: 40px;
+
+  p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.experience-section {
+  background-color: #f4f4f4;
+  text-align: center;
+
+  h1 {
+    color: black;
+  }
+
+  .container {
+    width: 60%;
+    max-width: 1360px;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    p {
+      margin-top: 6px;
+    }
+  
+    ul {
+      list-style: circle;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}
+
+.projects-section {
+  background-color: white;
+  text-align: center;
+  align-content: center;
+
+  .projects-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 1s;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .project-card + .project-card {
+    margin-left: 20px;
+  }
+
+  .project-card {
+    margin-top: 40px;
+    width: 300px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .project-img {
+    position: relative;
+    background-color: white;
+    height: auto;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+  }
+
+  .project-card img:hover {
+    opacity: 0.7;
+  }
+
+  .project-card h3 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 9px 15px;
+  }
+
+  .project-card p {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 5px;
+    padding: 9px 15px;
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 9px 15px;
+
+    mark {
+      font-family: "Roboto", sans-serif;
+      background-color: lightgray;
+      font-size: 17px;
+      padding: 5px;
+      margin-right: 8px;
+      margin-top: 5px;
+    }
+  }
+}
+
+.skill-section {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-bottom: 80px;
+
+    .skill-list {
+      font-size: 25px;
+      font-family: "Roboto", sans-serif;
+      width: 60%;
+      max-width: 1360px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+  }
+}
+
+footer {
+  background-color: #a01e8c;
+  position: relative;
+  bottom: 0;
+  height: 150px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+  .fa {
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 35px 2px;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    .container {
+      width: 60%;
+
+      .job-title {
+        font-size: 35px;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+
+      .fa {
+        font-size: 60px;
+      }
+    }
+
+    img {
+      width: 280px;
+      top: 8rem;
+      margin-left: auto;
+    }
+  }
+
+  .summary-section {
+    font-size: 25px;
+  }
+  
+  .skill-section {
+    .skill-list {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 30px;
+    }
+  }
+}
