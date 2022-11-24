@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <title>Amanda's portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
     <link
@@ -18,225 +20,243 @@
     <meta property="og:title" content="Amanda Araskog Portfolio" />
     <meta property="og:description" content="Web Developer Portfolio" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ5ZF76GDZ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DQ5ZF76GDZ"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DQ5ZF76GDZ');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-DQ5ZF76GDZ");
     </script>
   </head>
-
   <body>
     <header style="background-image: url('./assets/background.jpeg')">
-      <div class="header-container">
-        <h3 class="header-name" tabindex="0">
-          <span><strong>AMANDA ARASKOG</strong></span>
-        </h1>
-        <div class="header-job-title">
-          <h2>Full Stack</h2>
-          <h2>Developer</h2>
-          <h3></h3>
-          <div class="header-social-media">
+      <div class="container">
+        <h3 tabindex="0">
+          <strong>AMANDA ARASKOG</strong>
+        </h3>
+        <div class="job-title">
+          <h2>Full Stack<br />Developer</h2>
+          <div>
             <a
               href="https://www.linkedin.com/in/amanda-araskog/"
               class="fa fa-linkedin"
               target="_blank"
             ></a>
-
             <a
               href="https://github.com/araskog"
               class="fa fa-github"
               target="_blank"
             ></a>
             <a
-            href="mailto:amanda.araskog@gmail.com"
-            class="fa fa-envelope-square"
-            target="_blank"
-          ></a>
+              href="mailto:amanda.araskog@gmail.com"
+              class="fa fa-envelope-square"
+              target="_blank"
+            ></a>
           </div>
         </div>
-
-        <img class="photo" src="./assets/amanda.png" alt="Photo of Amanda" />
+        <img src="./assets/amanda.png" alt="Photo of Amanda" />
       </div>
     </header>
-
     <section class="summary-section">
       <p tabindex="0">
-        Outgoing engineer who works as a Full Stack Developer. I work with 
-        <mark>HTML5</mark>, <mark>CSS3</mark>, <mark>Sass</mark>, <mark>JavaScript ES6</mark>, <mark>Typescript</mark>, <mark>React</mark>, <mark>Python</mark>, <mark>Django</mark>, <mark>SQL</mark> and more. 
-        I have previous experience in team and product management, software training, business analytics, software development processes, as well as project management. Hold a Master of Science in Industrial Engineering and Management.
+        Outgoing engineer who works as a Full Stack Developer. I work with
+        <mark>HTML5</mark>, <mark>CSS3</mark>, <mark>Sass</mark>,
+        <mark>JavaScript ES6</mark>, <mark>Typescript</mark>,
+        <mark>React</mark>, <mark>Python</mark>, <mark>Django</mark>,
+        <mark>SQL</mark> and more. I have previous experience in team and
+        product management, software training, business analytics, software
+        development processes, as well as project management. Hold a Master of
+        Science in Industrial Engineering and Management.
       </p>
     </section>
-
     <section class="experience-section">
-    <h1 class="experience-section-title" tabindex="0">EXPERIENCE</h1>
-    <div class="experience-section-container">
+      <h1 class="experience-section-title" tabindex="0">EXPERIENCE</h1>
+      <div class="container">
         <a href="https://www.kundo.se/" target="_blank">
-            <span class="arrow-link">Kundo AB</span></a>
-            <span> - Full Stack Developer</span>
-            <p>August 2021 - December 2022, Stockholm</p>
-            <ul>
-              <li>Building a SaaS based customer service platform using mainly Python, Django, TypeScript, React and Sass.</li>
-              <li>Built API integrations (using REST and Graph) with Meta, Hubspot and O365.</li>
-              <li>Autonomous teams, switching team and focus every seven weeks.</li>
-            </ul> 
-        <div class="tags-container">
-          <p>Python</p>
-          <p>Django</p>
-          <p>TypeScript</p>
-          <p>React</p>
-          <p>Sass</p>
-          <p>Elasticsearch</p>
-          <p>MySQL</p>
-        </div>
+          <span class="arrow-link">Kundo AB</span></a
+        >
+        <span> - Full Stack Developer</span>
+        <p>August 2021 - December 2022, Stockholm</p>
+        <ul>
+          <li>
+            Building a SaaS based customer service platform using mainly Python,
+            Django, TypeScript, React and Sass.
+          </li>
+          <li>
+            Built API integrations (using REST and Graph) with Meta, Hubspot and
+            O365.
+          </li>
+          <li>Autonomous teams, switching team and focus every seven weeks.</li>
+        </ul>
+        <mark>Python</mark>
+        <mark>Django</mark>
+        <mark>TypeScript</mark>
+        <mark>React</mark>
+        <mark>Redux</mark>
+        <mark>Sass</mark>
+        <mark>Elasticsearch</mark>
+        <mark>MySQL</mark>
+        <mark>Graph API</mark>
+        <mark>Rest API</mark>
+      </div>
     </section>
-
     <section class="projects-section">
       <h1 tabindex="0">PROJECTS</h1>
-       <div class="projects-container"> 
-           <div class="project-card">
-             <a href="https://mnda-store-26ba1.web.app/" target="_blank" >
-                <div class="project-img">
-                  <img src="./assets/MNDA_store.jpeg" alt="" />
-                </div>
-                <h3>FULL STACK PROJECT: MNDA STORE</h3>
-              </a>
-              <p>
-                  E-commerce store implemented with Stripe payments, Google sign-in and more. Frontend is built in React and the backend includes Google Firebase and a Node on Express server.
-                  <a href="https://github.com/araskog/mnda-store" target="_blank"
-                    ><br><span class="arrow-link">GitHub >></span>
-                    </a>
-              </p>
-
-              <div class="tags-container">
-                <p>React</p>
-                <p>React Redux</p>
-                <p>React Router</p>
-                <p>Sass</p>
-                <p>Styled Components</p>
-                <p>Javascript ES6</p>
-                <p>REST API:s</p>
-                <p>Node.js</p>
-                <p>Express.js</p>
-                <p>Firebase</p>
-              </div>
+      <div class="projects-container">
+        <div class="project-card">
+          <a href="https://mnda-store-26ba1.web.app/" target="_blank">
+            <div class="project-img">
+              <img src="./assets/MNDA_store.jpeg" alt="" />
             </div>
-
-            <div class="project-card">
-              <a href="https://custom-burger-d5b45.web.app/" target="_blank">
-                  <div class="project-img">
-                    <img src="./assets/custom_burger.jpeg" alt="" />
-                  </div>
-                <h3>FULL STACK PROJECT: CUSTOM BURGER</h3></a>
-                <p>
-                  Register, create a burger, order it and see previous orders. Created in React with a Google Firebase database.
-                  <a href="https://github.com/araskog/custom-burger" target="_blank"><br><span class="arrow-link" >GitHub >></span>
-                  </a>
-                </p>
-                      
-                <div class="tags-container">
-                  <p >React</p>
-                  <p >CSS3</p>
-                  <p >Javascript ES6</p>
-                  <p >React Redux</p>
-                  <p >React Hooks</p>
-                  <p >React Router</p>
-                  <p >Firebase</p>
-                </div>
-            </div>
-
-            <div class="project-card project-hide">
-              <a
-                href="https://react-face-detect-app.herokuapp.com/"
-                target="_blank">
-                  <div class="project-img">
-                    <img src="./assets/face_detect.jpeg" alt="" />
-                  </div>
-                <h3>FULL STACK PROJECT: FACE-DETECT APP</h3></a>
-              <p>
-                Register, login and enter a URL to an image. This app will detect a face in the picture. Frontend in React, PostgreSQL database and a Node on Express server. The Clarifai API is used for the face detection.
-                <a
-                  href="https://github.com/araskog/face-detect"
-                  target="_blank"
-                ><br><span class="arrow-link" >GitHub >></span>   
-                  </a>
-               </p>
-                <div class="tags-container">
-                  <p>CSS3</p>
-                  <p>Javascript ES6</p>
-                  <p>React Hooks</p>
-                  <p>REST API:s</p>
-                  <p>Node.js</p>
-                  <p>Express.js</p>
-                  <p>PostgreSQL</p>
-                  <p>Heroku</p>
-                </div>
-              
-            </div>
-
-            <div class="project-card project-hide">
-              <a href="https://araskog.github.io/100-game/" target="_blank">
-                  <div class="project-img">
-                    <img src="./assets/100_game.jpeg" alt="" />
-                  </div>
-                <h3>JAVASCRIPT: 100-GAME</h3></a>
-                <p>
-                  Simple game written in JavaScript. First to 100 wins. Hold to store your current dice score. With a dice-roll of 1 you loose your current points and it's the next player's turn. 
-                  <a href="https://github.com/araskog/100-game" target="_blank"><br><span class="arrow-link" >GitHub >></span>
-                </a>
-              </p>
-              <div class="tags-container">
-                <p>CSS3</p>
-                <p>Javascript ES6</p>
-              </div>
-            </div>
-
-          <div class="project-card project-hide">
-            <a href="https://bowling-calculator-2021.web.app/" target="_blank">
-                <div class="project-img">
-                  <img src="./assets/bowling-calculator.png" alt="" />
-                </div>
-              <h3>BOWLING CALCULATOR</h3></a>
-              <p>
-                Scoreboard for bowling.
-                <a href="https://github.com/araskog/bowling" target="_blank"><br><span class="arrow-link" >GitHub >></span>
-              </a>
-            </p>
-            <div class="tags-container">
-              <p>CSS3</p>
-              <p>Javascript ES6</p>
-              <p>React</p>
-            </div>
-          </div>
-
-        <div class="project-card project-hide">
-          <a href="https://movie-search-aa.web.app/" target="_blank">
-              <div class="project-img">
-                <img src="./assets/movie-search.png" alt="" />
-              </div>
-            <h3>MOVIE SEARCH</h3></a>
-            <p>
-              Web page to search for movies using the OMDB API.
-              <a href="https://github.com/araskog/movie-search" target="_blank"><br><span class="arrow-link" >GitHub >></span>
+            <h3>FULL STACK PROJECT: MNDA STORE</h3>
+          </a>
+          <p>
+            E-commerce store implemented with Stripe payments, Google sign-in
+            and more. Frontend is built in React and the backend includes Google
+            Firebase and a Node on Express server.
+            <a href="https://github.com/araskog/mnda-store" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
             </a>
           </p>
           <div class="tags-container">
-            <p>HTML5</p>
-            <p>Javascript ES6</p>
-            <p>React Hooks</p>
-            <p>React Router</p>
-            <p>Firebase</p>
+            <mark>React</mark>
+            <mark>React Redux</mark>
+            <mark>React Router</mark>
+            <mark>Sass</mark>
+            <mark>Styled Components</mark>
+            <mark>Javascript ES6</mark>
+            <mark>REST API:s</mark>
+            <mark>Node.js</mark>
+            <mark>Express.js</mark>
+            <mark>Firebase</mark>
+          </div>
+        </div>
+        <div class="project-card">
+          <a href="https://custom-burger-d5b45.web.app/" target="_blank">
+            <div class="project-img">
+              <img src="./assets/custom_burger.jpeg" alt="" />
+            </div>
+            <h3>FULL STACK PROJECT: CUSTOM BURGER</h3></a
+          >
+          <p>
+            Register, create a burger, order it and see previous orders. Created
+            in React with a Google Firebase database.
+            <a href="https://github.com/araskog/custom-burger" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
+            </a>
+          </p>
+          <div class="tags-container">
+            <mark>React</mark>
+            <mark>CSS3</mark>
+            <mark>Javascript ES6</mark>
+            <mark>React Redux</mark>
+            <mark>React Hooks</mark>
+            <mark>React Router</mark>
+            <mark>Firebase</mark>
+          </div>
+        </div>
+
+        <div class="project-card project-hide">
+          <a
+            href="https://react-face-detect-app.herokuapp.com/"
+            target="_blank"
+          >
+            <div class="project-img">
+              <img src="./assets/face_detect.jpeg" alt="" />
+            </div>
+            <h3>FULL STACK PROJECT: FACE-DETECT APP</h3></a
+          >
+          <p>
+            Register, login and enter a URL to an image. This app will detect a
+            face in the picture. Frontend in React, PostgreSQL database and a
+            Node on Express server. The Clarifai API is used for the face
+            detection.
+            <a href="https://github.com/araskog/face-detect" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
+            </a>
+          </p>
+          <div class="tags-container">
+            <mark>CSS3</mark>
+            <mark>Javascript ES6</mark>
+            <mark>React Hooks</mark>
+            <mark>REST API:s</mark>
+            <mark>Node.js</mark>
+            <mark>Express.js</mark>
+            <mark>PostgreSQL</mark>
+            <mark>Heroku</mark>
+          </div>
+        </div>
+        <div class="project-card project-hide">
+          <a href="https://araskog.github.io/100-game/" target="_blank">
+            <div class="project-img">
+              <img src="./assets/100_game.jpeg" alt="" />
+            </div>
+            <h3>JAVASCRIPT: 100-GAME</h3>
+          </a>
+          <p>
+            Simple game written in JavaScript. First to 100 wins. Hold to store
+            your current dice score. With a dice-roll of 1 you loose your
+            current points and it's the next player's turn.
+            <a href="https://github.com/araskog/100-game" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
+            </a>
+          </p>
+          <div class="tags-container">
+            <mark>CSS3</mark>
+            <mark>Javascript ES6</mark>
+          </div>
+        </div>
+        <div class="project-card project-hide">
+          <a href="https://bowling-calculator-2021.web.app/" target="_blank">
+            <div class="project-img">
+              <img src="./assets/bowling-calculator.png" alt="" />
+            </div>
+            <h3>BOWLING CALCULATOR</h3>
+          </a>
+          <p>
+            Scoreboard for bowling.
+            <a href="https://github.com/araskog/bowling" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
+            </a>
+          </p>
+          <div class="tags-container">
+            <mark>CSS3</mark>
+            <mark>Javascript ES6</mark>
+            <mark>React</mark>
+          </div>
+        </div>
+        <div class="project-card project-hide">
+          <a href="https://movie-search-aa.web.app/" target="_blank">
+            <div class="project-img">
+              <img src="./assets/movie-search.png" alt="" />
+            </div>
+            <h3>MOVIE SEARCH</h3>
+          </a>
+          <p>
+            Web page to search for movies using the OMDB API.
+            <a href="https://github.com/araskog/movie-search" target="_blank"
+              ><br /><span class="arrow-link">GitHub >></span>
+            </a>
+          </p>
+          <div class="tags-container">
+            <mark>HTML5</mark>
+            <mark>Javascript ES6</mark>
+            <mark>React Hooks</mark>
+            <mark>React Router</mark>
+            <mark>Firebase</mark>
           </div>
         </div>
       </div>
     </section>
-
     <section class="skill-section">
       <h1 tabindex="0">SKILLS</h1>
-      <div class="skill-lists-container">  
+      <div class="skill-list">
         <div>
-        <!---- <h2 tabindex="0">CODE</h2> -->
           <ul tabindex="0">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -250,14 +270,13 @@
             <li>Django</li>
             <li>Git</li>
             <li>REST APIs</li>
+            <li>Graph APIs</li>
             <li>Node.js</li>
             <li>Express.js</li>
-            <li>SQL</li>          
+            <li>SQL</li>
           </ul>
         </div>
-
         <div>
-          <!---- <h2 tabindex="0">TOOLS</h2> -->
           <ul tabindex="0">
             <li>GitHub</li>
             <li>VS Code</li>
@@ -269,9 +288,7 @@
             <li>Command Line</li>
           </ul>
         </div>
-
         <div>
-        <!--- <h2 tabindex="0">MORE</h2> -->
           <ul tabindex="0">
             <li>Agile Methodology</li>
             <li>Communication</li>
@@ -284,27 +301,23 @@
         </div>
       </div>
     </section>
-
     <footer>
-      <div class="footer-social-media">
-        <a
-          href="https://www.linkedin.com/in/amanda-araskog/"
-          class="fa fa-linkedin"
-          target="_blank"
-        >
-        </a>
-
-        <a
-          href="https://github.com/araskog"
-          class="fa fa-github"
-          target="_blank"
-        ></a>
-        <a
-          href="mailto:amanda.araskog@gmail.com"
-          class="fa fa-envelope-square"
-          target="_blank"
-        ></a>
-      </div>
+      <a
+        href="https://www.linkedin.com/in/amanda-araskog/"
+        class="fa fa-linkedin"
+        target="_blank"
+      >
+      </a>
+      <a
+        href="https://github.com/araskog"
+        class="fa fa-github"
+        target="_blank"
+      ></a>
+      <a
+        href="mailto:amanda.araskog@gmail.com"
+        class="fa fa-envelope-square"
+        target="_blank"
+      ></a>
     </footer>
   </body>
 </html>
