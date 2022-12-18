@@ -56,7 +56,7 @@ header {
   color: white;
 }
 header .container {
-  width: 60%;
+  width: 90%;
   padding-top: 40px;
   margin: auto;
 }
@@ -87,7 +87,7 @@ header img {
   border: 5px solid white;
   width: 70px;
   position: absolute;
-  top: 14rem;
+  top: 12rem;
   right: 2rem;
   z-index: 5;
 }
@@ -98,8 +98,8 @@ header img {
   margin-top: 20px;
 }
 .summary-section p {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .experience-section {
@@ -111,8 +111,8 @@ header img {
 }
 .experience-section .container {
   text-align: left;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
@@ -232,7 +232,10 @@ footer .fa {
   color: white;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
+  header .container {
+    width: 60%;
+  }
   header .container .job-title {
     font-size: 35px;
     max-width: 60%;
@@ -244,16 +247,31 @@ footer .fa {
     font-size: 60px;
   }
   header img {
-    width: 280px;
-    top: 8rem;
+    width: 200px;
+    top: 16rem;
     margin-left: auto;
   }
   .summary-section {
     font-size: 25px;
   }
+  .summary-section p {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .experience-section .container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   .skill-section .skill-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  img {
+    width: 280px;
+    top: 8rem;
+    margin-left: auto;
   }
 }
 

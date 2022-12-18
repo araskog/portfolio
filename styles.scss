@@ -56,7 +56,7 @@ header {
   color: white;
 
   .container {
-    width: 60%;
+    width: 90%;
     padding-top: 40px;
     margin: auto;
 
@@ -92,7 +92,7 @@ header {
     border: 5px solid white;
     width: 70px;
     position: absolute;
-    top: 14rem;
+    top: 12rem;
     right: 2rem;
     z-index: 5;
   }
@@ -104,8 +104,8 @@ header {
   margin-top: 20px;
 
   p {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -119,8 +119,8 @@ header {
 
   .container {
     text-align: left;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     p {
@@ -255,9 +255,11 @@ footer {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 700px) {
   header {
     .container {
+      width: 60%;
+
       .job-title {
         font-size: 35px;
         max-width: 60%;
@@ -273,14 +275,25 @@ footer {
     }
 
     img {
-      width: 280px;
-      top: 8rem;
+      width: 200px;
+      top: 16rem;
       margin-left: auto;
     }
   }
 
   .summary-section {
     font-size: 25px;
+    p {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
+  .experience-section {
+    .container{
+    padding-left: 20%;
+    padding-right: 20%;
+    }
   }
   
   .skill-section {
@@ -290,3 +303,12 @@ footer {
     }
   }
 }
+
+
+@media only screen and (min-width: 900px) {
+    img {
+      width: 280px;
+      top: 8rem;
+      margin-left: auto;
+    }
+  }
