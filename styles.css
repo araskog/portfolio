@@ -13,8 +13,6 @@ h1 {
   color: #a01e8c;
   display: inline-block;
   font-size: 35px;
-  padding: 10px;
-  margin-bottom: 10px;
 }
 
 a {
@@ -63,7 +61,7 @@ header .container {
   margin: auto;
 }
 header .container .job-title {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
 }
 header .container h2 {
@@ -89,18 +87,19 @@ header img {
   border: 5px solid white;
   width: 70px;
   position: absolute;
-  top: 16rem;
+  top: 13rem;
   right: 2rem;
   z-index: 5;
 }
 
 .summary-section {
   font-size: 20px;
-  margin-top: 40px;
+  line-height: 32px;
+  margin-top: 20px;
 }
 .summary-section p {
-  width: 60%;
-  margin: 0 auto;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .experience-section {
@@ -111,10 +110,9 @@ header img {
   color: black;
 }
 .experience-section .container {
-  width: 60%;
-  max-width: 1360px;
   text-align: left;
-  margin: auto;
+  padding-left: 20%;
+  padding-right: 20%;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
@@ -137,6 +135,7 @@ header img {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
   transition: transform 1s;
 }
@@ -144,7 +143,6 @@ header img {
   text-decoration: none;
   color: black;
 }
-
 .projects-section .project-card {
   margin-top: 40px;
   width: 300px;
@@ -234,12 +232,10 @@ footer .fa {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
-  header .container {
-    width: 60%;
-  }
+@media only screen and (min-width: 900px) {
   header .container .job-title {
     font-size: 35px;
+    max-width: 60%;
   }
   header .container h3 {
     font-size: 25px;
@@ -258,10 +254,6 @@ footer .fa {
   .skill-section .skill-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
-  }
-
-  .projects-section .projects-container {
-    gap: 20px;
   }
 }
 

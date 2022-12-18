@@ -13,8 +13,6 @@ h1 {
   color: #a01e8c;
   display: inline-block;
   font-size: 35px;
-  padding: 10px;
-  margin-bottom: 10px;
 }
 
 a {
@@ -63,7 +61,7 @@ header {
     margin: auto;
 
     .job-title {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 700;
     }
 
@@ -92,9 +90,9 @@ header {
   img {
     border-radius: 50%;
     border: 5px solid white;
-    width: 125px;
+    width: 70px;
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     right: 2rem;
     z-index: 5;
   }
@@ -102,11 +100,12 @@ header {
 
 .summary-section {
   font-size: 20px;
-  margin-top: 40px;
+  line-height: 32px;
+  margin-top: 20px;
 
   p {
-    width: 60%;
-    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
@@ -119,10 +118,9 @@ header {
   }
 
   .container {
-    width: 60%;
-    max-width: 1360px;
     text-align: left;
-    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     p {
@@ -147,6 +145,7 @@ header {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     transition: transform 1s;
   }
@@ -154,10 +153,6 @@ header {
   a {
     text-decoration: none;
     color: black;
-  }
-
-  .project-card + .project-card {
-    margin-left: 20px;
   }
 
   .project-card {
@@ -260,13 +255,12 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   header {
     .container {
-      width: 60%;
-
       .job-title {
         font-size: 35px;
+        max-width: 60%;
       }
 
       h3 {
