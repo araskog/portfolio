@@ -276,7 +276,7 @@ footer {
 
     img {
       width: 200px;
-      top: 16rem;
+      top: 14rem;
       margin-left: auto;
     }
   }
@@ -304,11 +304,12 @@ footer {
   }
 }
 
-
 @media only screen and (min-width: 900px) {
+  header {  
     img {
-      width: 280px;
-      top: 8rem;
-      margin-left: auto;
-    }
+        width: 280px;
+        top: 8rem;
+        margin-left: auto;
+      }
   }
+}
