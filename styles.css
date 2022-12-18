@@ -87,9 +87,9 @@ header .container .fa {
 header img {
   border-radius: 50%;
   border: 5px solid white;
-  width: 125px;
+  width: 70px;
   position: absolute;
-  top: 12rem;
+  top: 16rem;
   right: 2rem;
   z-index: 5;
 }
@@ -144,9 +144,7 @@ header img {
   text-decoration: none;
   color: black;
 }
-.projects-section .project-card + .project-card {
-  margin-left: 20px;
-}
+
 .projects-section .project-card {
   margin-top: 40px;
   width: 300px;
@@ -260,6 +258,10 @@ footer .fa {
   .skill-section .skill-list {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
+  }
+
+  .projects-section .projects-container {
+    gap: 20px;
   }
 }
 
