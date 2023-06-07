@@ -1,3 +1,3 @@
 # portfolio
 
-My portfolio page, made in HTML and CSS.
+My old portfolio page, made in HTML and CSS.
